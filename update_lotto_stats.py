@@ -6,10 +6,6 @@ import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 
-# ==========================================
-# 설정
-# ==========================================
-
 API_URL = (
     "https://www.dhlottery.co.kr/"
     "lt645/selectPstLt645InfoNew.do"
@@ -19,28 +15,17 @@ OUTPUT_FILE = Path(__file__).with_name("method-stats.json")
 LOTTO_FILE = Path(__file__).with_name("lotto.json")
 
 FIRST_AVAILABLE_ROUND = 5
-
-# 요청 사이 대기 시간
 REQUEST_DELAY = 0.1
-
-# 요청당 최대 대기 시간
 REQUEST_TIMEOUT = 5
 REQUEST_RETRIES = 2
 RETRY_BASE_DELAY = 1
 
-# ==========================================
-# 최신 회차 확인
-# ==========================================
 
 def get_latest_round():
     if not LOTTO_FILE.exists():
-        raise FileNotFoundError(
-            f"당첨번호 파일을 찾을 수 없습니다: {LOTTO_FILE}"
-        )
+        raise FileNotFoundError(f"파일 없음: {LOTTO_FILE}")
 
-    data = json.loads(
-        LOTTO_FILE.read_text(encoding="utf-8")
-    )
+    data = json.loads(LOTTO_FILE.read_text(encoding="utf-8"))
 
     if not isinstance(data, list) or not data:
         raise ValueError("lotto.json 데이터가 비어 있습니다.")
@@ -50,12 +35,9 @@ def get_latest_round():
         for item in data
         if isinstance(item, dict)
     ]
-
     rounds = [
-        number for number in rounds
-        if isinstance(number, int)
-        and not isinstance(number, bool)
-        and number > 0
+        r for r in rounds
+        if isinstance(r, int) and not isinstance(r, bool) and r > 0
     ]
 
     if not rounds:
@@ -64,44 +46,67 @@ def get_latest_round():
     return max(rounds)
 
 
-# ==========================================
-# 기존 통계 데이터 읽기 (검증된 데이터 보존)
-# ==========================================
-
 def load_existing_rounds():
     if not OUTPUT_FILE.exists():
-        print("기존 method-stats.json 없음: 새로 수집합니다.")
+        print("기존 통계 파일이 없습니다. 전체 수집 모드로 진행합니다.")
         return {}
 
     try:
-        old_data = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
-        old_rounds = old_data.get("rounds", [])
+        data = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
         result = {}
-        for item in old_rounds:
-            if isinstance(item, dict) and isinstance(item.get("round"), int):
+
+        for item in data.get("rounds", []):
+            if (
+                isinstance(item, dict)
+                and isinstance(item.get("round"), int)
+                and not isinstance(item.get("round"), bool)
+            ):
                 result[item["round"]] = item
-        print(f"기존 통계 데이터 {len(result)}개 회차를 읽었습니다.")
+
+        print(f"기존 통계 {len(result)}개 회차를 읽었습니다.")
         return result
+
     except Exception as error:
-        print(f"기존 통계 파일 읽기 실패: {error}")
-        return {}
+        # 손상된 기존 파일을 빈 데이터로 간주해 덮어쓰지 않습니다.
+        raise RuntimeError(
+            f"기존 통계 파일을 읽을 수 없습니다. "
+            f"파일을 보존하고 원인을 확인하세요: {error}"
+        ) from error
 
 
 def record_quality(item):
+    if not isinstance(item, dict):
+        return 0
+
     status = item.get("methodDataStatus")
+
     if status in ("verified", "no_first_prize_winner"):
         return 3
     if status == "unverified":
         return 2
     if status == "unavailable":
         return 1
+
     return 0
 
 
-# ==========================================
-# API 요청
-# 실패하면 None 반환 후 다음 요청 진행
-# ==========================================
+def make_unavailable_round(round_no):
+    return {
+        "round": round_no,
+        "date": None,
+        "numbers": None,
+        "bonus": None,
+        "firstPrizeGames": None,
+        "purchaseMethod": {
+            "automatic": None,
+            "manual": None,
+            "semiAutomatic": None,
+        },
+        "methodDataStatus": "unavailable",
+        "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
+        "winType0": None,
+    }
+
 
 def fetch_round_data(center_round):
     params = urllib.parse.urlencode({
@@ -110,6 +115,7 @@ def fetch_round_data(center_round):
     })
 
     url = f"{API_URL}?{params}"
+
     headers = {
         "User-Agent": "Mozilla/5.0",
         "Accept": "application/json, text/plain, */*",
@@ -120,42 +126,47 @@ def fetch_round_data(center_round):
     for attempt in range(1, REQUEST_RETRIES + 1):
         try:
             request = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT) as response:
+
+            with urllib.request.urlopen(
+                request, timeout=REQUEST_TIMEOUT
+            ) as response:
                 body = response.read().decode("utf-8")
 
             result = json.loads(body)
+
             if not isinstance(result, dict):
                 raise ValueError("API 응답 형식 오류")
+
             if result.get("resultCode") not in (None, "0000", "200"):
-                raise ValueError(f"API 오류: {result.get('resultMessage')}")
+                raise ValueError(
+                    f"API 오류: {result.get('resultMessage')}"
+                )
 
             rows = (result.get("data") or {}).get("list")
+
             if not isinstance(rows, list) or not rows:
                 raise ValueError("응답 데이터가 없습니다.")
 
             print(
-                f"  성공: {center_round}회차 기준 "
-                f"({len(rows)}건, {attempt}번째 시도)"
+                f"  성공: {center_round}회차 기준, "
+                f"{len(rows)}건, {attempt}번째 시도"
             )
             return rows
 
         except Exception as error:
             print(
                 f"  요청 실패: {center_round}회차 기준 "
-                f"({attempt}/{REQUEST_RETRIES}회): {error}"
+                f"({attempt}/{REQUEST_RETRIES}): {error}"
             )
-            if attempt < REQUEST_RETRIES:
-                wait_seconds = RETRY_BASE_DELAY * attempt
-                print(f"  {wait_seconds}초 후 재시도합니다.")
-                time.sleep(wait_seconds)
 
-    print(f"  최종 미확인: {center_round}회차 기준 요청 실패")
+            if attempt < REQUEST_RETRIES:
+                wait = RETRY_BASE_DELAY * attempt
+                print(f"  {wait}초 후 재시도")
+                time.sleep(wait)
+
+    print(f"  실패: {center_round}회차 기준")
     return None
 
-
-# ==========================================
-# 회차 데이터 검증
-# ==========================================
 
 def require_nonnegative_int(row, field, round_no):
     value = row.get(field)
@@ -180,23 +191,17 @@ def parse_round(row):
         or isinstance(round_no, bool)
         or round_no <= 0
     ):
-        raise ValueError(
-            f"잘못된 회차 번호: {round_no!r}"
-        )
+        raise ValueError(f"잘못된 회차 번호: {round_no!r}")
 
-    numbers = [
-        row.get(f"tm{i}WnNo")
-        for i in range(1, 7)
-    ]
-
+    numbers = [row.get(f"tm{i}WnNo") for i in range(1, 7)]
     bonus = row.get("bnsWnNo")
 
     valid_numbers = (
         all(
-            isinstance(number, int)
-            and not isinstance(number, bool)
-            and 1 <= number <= 45
-            for number in numbers
+            isinstance(n, int)
+            and not isinstance(n, bool)
+            and 1 <= n <= 45
+            for n in numbers
         )
         and len(set(numbers)) == 6
         and isinstance(bonus, int)
@@ -206,58 +211,41 @@ def parse_round(row):
     )
 
     if not valid_numbers:
-        raise ValueError(
-            f"{round_no}회차 당첨번호 검증 실패"
-        )
+        raise ValueError(f"{round_no}회차 당첨번호 검증 실패")
 
     first_prize_games = require_nonnegative_int(
         row, "rnk1WnNope", round_no
     )
 
-    automatic = None
-    manual = None
-    semi_automatic = None
+    modes = [row.get("winType1"), row.get("winType2"), row.get("winType3")]
 
-    method_status = "unverified"
-    method_note = "구매 방식 데이터 미확인"
-
-    raw_modes = [
-        row.get("winType1"),
-        row.get("winType2"),
-        row.get("winType3"),
-    ]
-
-    fields_valid = all(
+    modes_valid = all(
         isinstance(value, int)
         and not isinstance(value, bool)
         and value >= 0
-        for value in raw_modes
+        for value in modes
     )
 
-    if fields_valid:
-        a, m, s = raw_modes
-        method_sum = a + m + s
+    automatic = manual = semi_automatic = None
+    status = "unverified"
+    note = "구매 방식 데이터 미확인"
 
-        if first_prize_games == 0 and method_sum == 0:
-            method_status = "no_first_prize_winner"
-            method_note = "해당 회차의 1등 당첨 게임 수가 0입니다."
+    if modes_valid:
+        a, m, s = modes
+        mode_sum = a + m + s
 
-            automatic = 0
-            manual = 0
-            semi_automatic = 0
+        if first_prize_games == 0 and mode_sum == 0:
+            status = "no_first_prize_winner"
+            note = "해당 회차의 1등 당첨 게임 수가 0입니다."
+            automatic, manual, semi_automatic = 0, 0, 0
 
-        elif method_sum == first_prize_games:
-            method_status = "verified"
-            method_note = "구매 방식 합계 검증 완료"
-
-            automatic = a
-            manual = m
-            semi_automatic = s
+        elif mode_sum == first_prize_games:
+            status = "verified"
+            note = "구매 방식 합계 검증 완료"
+            automatic, manual, semi_automatic = a, m, s
 
         else:
-            method_note = (
-                "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다."
-            )
+            note = "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다."
 
     return {
         "round": round_no,
@@ -270,59 +258,160 @@ def parse_round(row):
             "manual": manual,
             "semiAutomatic": semi_automatic,
         },
-        "methodDataStatus": method_status,
-        "methodDataNote": method_note,
+        "methodDataStatus": status,
+        "methodDataNote": note,
         "winType0": row.get("winType0"),
     }
 
 
-# ==========================================
-# 미확인 회차 생성
-# ==========================================
+def build_output(round_map, latest_round):
+    expected = range(FIRST_AVAILABLE_ROUND, latest_round + 1)
 
-def make_unavailable_round(round_no):
-    return {
-        "round": round_no,
-        "date": None,
-        "numbers": None,
-        "bonus": None,
-        "firstPrizeGames": None,
-        "purchaseMethod": {
-            "automatic": None,
-            "manual": None,
-            "semiAutomatic": None,
-        },
-        "methodDataStatus": "unavailable",
-        "methodDataNote": (
-            "API 응답 또는 회차 데이터 확인 실패"
+    rounds = [
+        round_map.get(r, make_unavailable_round(r))
+        for r in expected
+    ]
+
+    verified = [
+        item for item in rounds
+        if item.get("methodDataStatus") == "verified"
+    ]
+
+    no_winner = [
+        item for item in rounds
+        if item.get("methodDataStatus") == "no_first_prize_winner"
+    ]
+
+    unverified = [
+        item for item in rounds
+        if item.get("methodDataStatus") == "unverified"
+    ]
+
+    unavailable = [
+        item for item in rounds
+        if item.get("methodDataStatus") == "unavailable"
+    ]
+
+    totals = {
+        "automatic": sum(
+            (item.get("purchaseMethod") or {}).get("automatic") or 0
+            for item in verified
         ),
-        "winType0": None,
+        "manual": sum(
+            (item.get("purchaseMethod") or {}).get("manual") or 0
+            for item in verified
+        ),
+        "semiAutomatic": sum(
+            (item.get("purchaseMethod") or {}).get("semiAutomatic") or 0
+            for item in verified
+        ),
+        "firstPrizeGames": sum(
+            item.get("firstPrizeGames") or 0 for item in verified
+        ),
+    }
+
+    method_sum = (
+        totals["automatic"]
+        + totals["manual"]
+        + totals["semiAutomatic"]
+    )
+
+    if method_sum != totals["firstPrizeGames"]:
+        raise RuntimeError("전체 구매 방식 합계 검증 실패")
+
+    return {
+        "source": "Donghaeng Lottery",
+        "api": API_URL,
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "latestRound": latest_round,
+        "firstAvailableRound": FIRST_AVAILABLE_ROUND,
+        "roundCount": len(rounds),
+        "methodStatistics": {
+            "verifiedRoundCount": len(verified),
+            "noFirstPrizeWinnerRoundCount": len(no_winner),
+            "unverifiedRoundCount": len(unverified),
+            "unavailableRoundCount": len(unavailable),
+            "unavailableRounds": [item["round"] for item in unavailable],
+            "verifiedTotals": totals,
+            "coverageNote": (
+                "구매 방식 합계는 검증 완료 회차만 집계합니다. "
+                "응답 실패 또는 데이터 누락 회차는 집계에서 제외합니다."
+            ),
+        },
+        "rounds": rounds,
     }
 
 
-# ==========================================
-# 전체 회차 수집
-# ==========================================
+def save_output(round_map, latest_round):
+    output = build_output(round_map, latest_round)
+    temp_file = OUTPUT_FILE.with_suffix(".tmp")
+
+    temp_file.write_text(
+        json.dumps(output, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    temp_file.replace(OUTPUT_FILE)
+
+    stats = output["methodStatistics"]
+    print(
+        "  중간 저장 완료: "
+        f"검증 {stats['verifiedRoundCount']}, "
+        f"미확인 {stats['unverifiedRoundCount']}, "
+        f"응답 실패 {stats['unavailableRoundCount']}"
+    )
+
+
+def get_request_centers(round_map, latest_round, full_scan):
+    if full_scan:
+        centers = list(range(10, latest_round + 1, 10))
+        if not centers or centers[-1] != latest_round:
+            centers.append(latest_round)
+        return sorted(set(centers))
+
+    # unavailable 회차가 포함된 10회차 단위 구간만 재조회합니다.
+    centers = set()
+
+    for round_no in range(FIRST_AVAILABLE_ROUND, latest_round + 1):
+        item = round_map.get(round_no)
+
+        if not item or item.get("methodDataStatus") == "unavailable":
+            center = ((round_no + 5) // 10) * 10
+
+            if center > latest_round:
+                center = latest_round
+
+            centers.add(center)
+
+    return sorted(centers)
+
 
 def main():
-    collected = {}
-    existing_rounds = load_existing_rounds()
     latest_round = get_latest_round()
+    round_map = load_existing_rounds()
 
-    print(f"lotto.json 기준 최신 회차: {latest_round}")
+    print(f"lotto.json 최신 회차: {latest_round}")
 
-    centers = list(range(10, latest_round + 1, 10))
+    full_scan = not round_map
 
-    if not centers or centers[-1] != latest_round:
-        centers.append(latest_round)
+    # 누락된 회차를 기본값으로 준비하되, 기존 데이터를 덮어쓰지 않습니다.
+    for round_no in range(FIRST_AVAILABLE_ROUND, latest_round + 1):
+        if round_no not in round_map:
+            round_map[round_no] = make_unavailable_round(round_no)
 
-    total_requests = len(centers)
+    centers = get_request_centers(round_map, latest_round, full_scan)
+
+    if full_scan:
+        print(f"전체 수집 모드: {len(centers)}개 요청")
+    else:
+        print(f"실패 구간 복구 모드: {len(centers)}개 요청")
+
+    if not centers:
+        print("재조회할 실패 구간이 없습니다.")
+        save_output(round_map, latest_round)
+        return
 
     for index, center in enumerate(centers, start=1):
-        print(
-            f"\n[{index}/{total_requests}] "
-            f"{center}회차 기준 요청 중..."
-        )
+        print(f"\n[{index}/{len(centers)}] {center}회차 기준 요청")
 
         rows = fetch_round_data(center)
 
@@ -332,175 +421,48 @@ def main():
                     item = parse_round(row)
                     round_no = item["round"]
 
-                    if (
-                        FIRST_AVAILABLE_ROUND
-                        <= round_no
-                        <= latest_round
-                    ):
-                        collected[round_no] = item
+                    if not FIRST_AVAILABLE_ROUND <= round_no <= latest_round:
+                        continue
 
-                except Exception as error:
-                    round_no = (
-                        row.get("ltEpsd")
-                        if isinstance(row, dict)
-                        else None
-                    )
+                    old_item = round_map.get(round_no)
 
-                    print(f"  개별 데이터 검증 실패: {error}")
-
-                    if (
-                        isinstance(round_no, int)
-                        and not isinstance(round_no, bool)
-                        and FIRST_AVAILABLE_ROUND
-                        <= round_no
-                        <= latest_round
-                        and round_no not in collected
-                    ):
-                        collected[round_no] = (
-                            make_unavailable_round(round_no)
+                    # 기존 데이터보다 품질이 좋은 데이터만 반영합니다.
+                    if record_quality(item) > record_quality(old_item):
+                        round_map[round_no] = item
+                        print(
+                            f"  회차 {round_no} 갱신: "
+                            f"{item['methodDataStatus']}"
                         )
 
-        if index < total_requests:
-            time.sleep(REQUEST_DELAY)
+                except Exception as error:
+                    print(f"  개별 데이터 검증 실패: {error}")
 
-    # 새 수집 결과가 없거나 품질이 낮으면 기존의 더 나은 데이터를 보존합니다.
-    expected_rounds = range(
-        FIRST_AVAILABLE_ROUND,
-        latest_round + 1,
-    )
+            # 성공한 구간마다 저장해 실행 취소 시에도 복구 결과를 보존합니다.
+            save_output(round_map, latest_round)
 
-    for round_no in expected_rounds:
-        new_item = collected.get(round_no)
-        old_item = existing_rounds.get(round_no)
+        time.sleep(REQUEST_DELAY)
 
-        if new_item is None:
-            new_item = make_unavailable_round(round_no)
+    # 마지막에도 전체 통계를 다시 계산하고 저장합니다.
+    save_output(round_map, latest_round)
 
-        if old_item is not None and record_quality(old_item) > record_quality(new_item):
-            collected[round_no] = old_item
-        else:
-            collected[round_no] = new_item
+    output = build_output(round_map, latest_round)
+    stats = output["methodStatistics"]
 
-    rounds = [
-        collected[round_no]
-        for round_no in expected_rounds
-    ]
-
-    verified_rounds = [
-        item for item in rounds
-        if item["methodDataStatus"] == "verified"
-    ]
-
-    no_winner_rounds = [
-        item for item in rounds
-        if item["methodDataStatus"] == "no_first_prize_winner"
-    ]
-
-    unverified_rounds = [
-        item for item in rounds
-        if item["methodDataStatus"] == "unverified"
-    ]
-
-    unavailable_rounds = [
-        item for item in rounds
-        if item["methodDataStatus"] == "unavailable"
-    ]
-
-    totals = {
-        "automatic": sum(
-            item["purchaseMethod"]["automatic"]
-            for item in verified_rounds
-        ),
-        "manual": sum(
-            item["purchaseMethod"]["manual"]
-            for item in verified_rounds
-        ),
-        "semiAutomatic": sum(
-            item["purchaseMethod"]["semiAutomatic"]
-            for item in verified_rounds
-        ),
-        "firstPrizeGames": sum(
-            item["firstPrizeGames"]
-            for item in verified_rounds
-        ),
-    }
-
-    method_total = (
-        totals["automatic"]
-        + totals["manual"]
-        + totals["semiAutomatic"]
-    )
-
-    if method_total != totals["firstPrizeGames"]:
-        raise RuntimeError(
-            "전체 구매 방식 합계 검증 실패"
-        )
-
-    output = {
-        "source": "Donghaeng Lottery",
-        "api": API_URL,
-        "generatedAt": datetime.now(
-            timezone.utc
-        ).isoformat(),
-        "latestRound": latest_round,
-        "firstAvailableRound": FIRST_AVAILABLE_ROUND,
-        "roundCount": len(rounds),
-        "methodStatistics": {
-            "verifiedRoundCount": len(verified_rounds),
-            "noFirstPrizeWinnerRoundCount": len(no_winner_rounds),
-            "unverifiedRoundCount": len(unverified_rounds),
-            "unavailableRoundCount": len(unavailable_rounds),
-            "unavailableRounds": [
-                item["round"] for item in unavailable_rounds
-            ],
-            "verifiedTotals": totals,
-            "coverageNote": (
-                "구매 방식 합계는 검증 완료 회차만 집계합니다. "
-                "API 응답 실패 또는 데이터 누락 회차는 "
-                "null로 기록하고 집계에서 제외합니다."
-            ),
-        },
-        "rounds": rounds,
-    }
-
-    # 임시 파일 저장 후 최종 파일로 교체
-    temp_file = OUTPUT_FILE.with_suffix(".tmp")
-
-    temp_file.write_text(
-        json.dumps(
-            output,
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-
-    temp_file.replace(OUTPUT_FILE)
-
-    print("\n========== 수집 결과 ==========")
-    print(f"전체 회차 범위: {len(rounds)}")
-    print(f"첫 회차: {rounds[0]['round']}")
-    print(f"최신 회차: {rounds[-1]['round']}")
-    print(f"구매 방식 검증 완료: {len(verified_rounds)}")
-    print(f"1등 당첨 게임 없음: {len(no_winner_rounds)}")
-    print(f"구매 방식 미확인: {len(unverified_rounds)}")
-    print(f"응답 실패·데이터 누락: {len(unavailable_rounds)}")
-
-    if unavailable_rounds:
-        print(
-            "미확인 회차 목록:",
-            [item["round"] for item in unavailable_rounds],
-        )
-
-    print("\n검증 완료 회차의 구매 방식 합계:")
-    print(json.dumps(totals, ensure_ascii=False, indent=2))
-    print(f"\n저장 완료: {OUTPUT_FILE}")
+    print("\n========== 최종 결과 ==========")
+    print(f"전체 회차: {output['roundCount']}")
+    print(f"최신 회차: {latest_round}")
+    print(f"구매 방식 검증 완료: {stats['verifiedRoundCount']}")
+    print(f"1등 당첨 게임 없음: {stats['noFirstPrizeWinnerRoundCount']}")
+    print(f"구매 방식 미확인: {stats['unverifiedRoundCount']}")
+    print(f"응답 실패·데이터 누락: {stats['unavailableRoundCount']}")
+    print("구매 방식 합계:")
+    print(json.dumps(stats["verifiedTotals"], ensure_ascii=False, indent=2))
+    print(f"저장 완료: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
     try:
         main()
     except Exception as error:
-        print("\n수집 실패")
-        print(f"{type(error).__name__}: {error}")
-        print("최종 파일 저장 전 오류가 발생했습니다.")
+        print(f"\n실행 실패: {type(error).__name__}: {error}")
+        raise
