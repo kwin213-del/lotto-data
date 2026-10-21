@@ -1,106 +1,16 @@
 {
   "source": "Donghaeng Lottery",
   "api": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do",
-  "generatedAt": "2026-10-21T08:57:27.910904+00:00",
+  "generatedAt": "2026-10-21T09:07:39.485589+00:00",
   "latestRound": 1246,
   "firstAvailableRound": 5,
   "roundCount": 1242,
   "methodStatistics": {
-    "verifiedRoundCount": 812,
+    "verifiedRoundCount": 952,
     "noFirstPrizeWinnerRoundCount": 12,
     "unverifiedRoundCount": 248,
-    "unavailableRoundCount": 170,
+    "unavailableRoundCount": 30,
     "unavailableRounds": [
-      355,
-      356,
-      357,
-      358,
-      359,
-      360,
-      361,
-      362,
-      363,
-      364,
-      485,
-      486,
-      487,
-      488,
-      489,
-      490,
-      491,
-      492,
-      493,
-      494,
-      505,
-      506,
-      507,
-      508,
-      509,
-      510,
-      511,
-      512,
-      513,
-      514,
-      535,
-      536,
-      537,
-      538,
-      539,
-      540,
-      541,
-      542,
-      543,
-      544,
-      585,
-      586,
-      587,
-      588,
-      589,
-      590,
-      591,
-      592,
-      593,
-      594,
-      645,
-      646,
-      647,
-      648,
-      649,
-      650,
-      651,
-      652,
-      653,
-      654,
-      655,
-      656,
-      657,
-      658,
-      659,
-      660,
-      661,
-      662,
-      663,
-      664,
-      665,
-      666,
-      667,
-      668,
-      669,
-      670,
-      671,
-      672,
-      673,
-      674,
-      685,
-      686,
-      687,
-      688,
-      689,
-      690,
-      691,
-      692,
-      693,
-      694,
       695,
       696,
       697,
@@ -121,36 +31,6 @@
       962,
       963,
       964,
-      1015,
-      1016,
-      1017,
-      1018,
-      1019,
-      1020,
-      1021,
-      1022,
-      1023,
-      1024,
-      1035,
-      1036,
-      1037,
-      1038,
-      1039,
-      1040,
-      1041,
-      1042,
-      1043,
-      1044,
-      1045,
-      1046,
-      1047,
-      1048,
-      1049,
-      1050,
-      1051,
-      1052,
-      1053,
-      1054,
       1165,
       1166,
       1167,
@@ -160,33 +40,13 @@
       1171,
       1172,
       1173,
-      1174,
-      1175,
-      1176,
-      1177,
-      1178,
-      1179,
-      1180,
-      1181,
-      1182,
-      1183,
-      1184,
-      1205,
-      1206,
-      1207,
-      1208,
-      1209,
-      1210,
-      1211,
-      1212,
-      1213,
-      1214
+      1174
     ],
     "verifiedTotals": {
-      "automatic": 5099,
-      "manual": 2325,
-      "semiAutomatic": 217,
-      "firstPrizeGames": 7641
+      "automatic": 5967,
+      "manual": 2762,
+      "semiAutomatic": 248,
+      "firstPrizeGames": 8977
     },
     "coverageNote": "구매 방식 합계는 검증 완료 회차만 집계합니다. 응답 실패 또는 데이터 누락 회차는 집계에서 제외합니다."
   },
@@ -7893,153 +7753,223 @@
     },
     {
       "round": 355,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20090919",
+      "numbers": [
+        5,
+        8,
+        29,
+        30,
+        35,
+        44
+      ],
+      "bonus": 38,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 356,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20090926",
+      "numbers": [
+        2,
+        8,
+        14,
+        25,
+        29,
+        45
+      ],
+      "bonus": 24,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 357,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091003",
+      "numbers": [
+        10,
+        14,
+        18,
+        21,
+        36,
+        37
+      ],
+      "bonus": 5,
+      "firstPrizeGames": 2,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 358,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091010",
+      "numbers": [
+        1,
+        9,
+        10,
+        12,
+        21,
+        40
+      ],
+      "bonus": 37,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 359,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091017",
+      "numbers": [
+        1,
+        10,
+        19,
+        20,
+        24,
+        40
+      ],
+      "bonus": 23,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 360,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091024",
+      "numbers": [
+        4,
+        16,
+        23,
+        25,
+        35,
+        40
+      ],
+      "bonus": 27,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 361,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091031",
+      "numbers": [
+        5,
+        10,
+        16,
+        24,
+        27,
+        35
+      ],
+      "bonus": 33,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 362,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091107",
+      "numbers": [
+        2,
+        3,
+        22,
+        27,
+        30,
+        40
+      ],
+      "bonus": 29,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 363,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091114",
+      "numbers": [
+        11,
+        12,
+        14,
+        21,
+        32,
+        38
+      ],
+      "bonus": 6,
+      "firstPrizeGames": 4,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 364,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20091121",
+      "numbers": [
+        2,
+        5,
+        7,
+        14,
+        16,
+        40
+      ],
+      "bonus": 4,
+      "firstPrizeGames": 4,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 365,
@@ -10683,153 +10613,223 @@
     },
     {
       "round": 485,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120317",
+      "numbers": [
+        17,
+        22,
+        26,
+        27,
+        36,
+        39
+      ],
+      "bonus": 20,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 486,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120324",
+      "numbers": [
+        1,
+        2,
+        23,
+        25,
+        38,
+        40
+      ],
+      "bonus": 43,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 9,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 487,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120331",
+      "numbers": [
+        4,
+        8,
+        25,
+        27,
+        37,
+        41
+      ],
+      "bonus": 21,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 488,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120407",
+      "numbers": [
+        2,
+        8,
+        17,
+        30,
+        31,
+        38
+      ],
+      "bonus": 25,
+      "firstPrizeGames": 10,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 8,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 489,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120414",
+      "numbers": [
+        2,
+        4,
+        8,
+        15,
+        20,
+        27
+      ],
+      "bonus": 11,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 490,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120421",
+      "numbers": [
+        2,
+        7,
+        26,
+        29,
+        40,
+        43
+      ],
+      "bonus": 42,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 491,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120428",
+      "numbers": [
+        8,
+        17,
+        35,
+        36,
+        39,
+        42
+      ],
+      "bonus": 4,
+      "firstPrizeGames": 4,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 492,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120505",
+      "numbers": [
+        22,
+        27,
+        31,
+        35,
+        37,
+        40
+      ],
+      "bonus": 42,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 493,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120512",
+      "numbers": [
+        20,
+        22,
+        26,
+        33,
+        36,
+        37
+      ],
+      "bonus": 25,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 494,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120519",
+      "numbers": [
+        5,
+        7,
+        8,
+        15,
+        30,
+        43
+      ],
+      "bonus": 22,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 495,
@@ -11053,153 +11053,223 @@
     },
     {
       "round": 505,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120804",
+      "numbers": [
+        7,
+        20,
+        22,
+        25,
+        38,
+        40
+      ],
+      "bonus": 44,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 506,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120811",
+      "numbers": [
+        6,
+        9,
+        11,
+        22,
+        24,
+        30
+      ],
+      "bonus": 31,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 507,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120818",
+      "numbers": [
+        12,
+        13,
+        32,
+        33,
+        40,
+        41
+      ],
+      "bonus": 4,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 508,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120825",
+      "numbers": [
+        5,
+        27,
+        31,
+        34,
+        35,
+        43
+      ],
+      "bonus": 37,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 509,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120901",
+      "numbers": [
+        12,
+        25,
+        29,
+        35,
+        42,
+        43
+      ],
+      "bonus": 24,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 510,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120908",
+      "numbers": [
+        12,
+        29,
+        32,
+        33,
+        39,
+        40
+      ],
+      "bonus": 42,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 511,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120915",
+      "numbers": [
+        3,
+        7,
+        14,
+        23,
+        26,
+        42
+      ],
+      "bonus": 24,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 512,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120922",
+      "numbers": [
+        4,
+        5,
+        9,
+        13,
+        26,
+        27
+      ],
+      "bonus": 1,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 9,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 513,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20120929",
+      "numbers": [
+        5,
+        8,
+        21,
+        23,
+        27,
+        33
+      ],
+      "bonus": 12,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 514,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20121006",
+      "numbers": [
+        1,
+        15,
+        20,
+        26,
+        35,
+        42
+      ],
+      "bonus": 9,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 515,
@@ -11643,153 +11713,223 @@
     },
     {
       "round": 535,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130302",
+      "numbers": [
+        11,
+        12,
+        14,
+        15,
+        18,
+        39
+      ],
+      "bonus": 34,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 536,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130309",
+      "numbers": [
+        7,
+        8,
+        18,
+        32,
+        37,
+        43
+      ],
+      "bonus": 12,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 537,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130316",
+      "numbers": [
+        12,
+        23,
+        26,
+        30,
+        36,
+        43
+      ],
+      "bonus": 11,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 538,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130323",
+      "numbers": [
+        6,
+        10,
+        18,
+        31,
+        32,
+        34
+      ],
+      "bonus": 11,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 1,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 539,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130330",
+      "numbers": [
+        3,
+        19,
+        22,
+        31,
+        42,
+        43
+      ],
+      "bonus": 26,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 540,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130406",
+      "numbers": [
+        3,
+        12,
+        13,
+        15,
+        34,
+        36
+      ],
+      "bonus": 14,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 541,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130413",
+      "numbers": [
+        8,
+        13,
+        26,
+        28,
+        32,
+        34
+      ],
+      "bonus": 43,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 9,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 542,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130420",
+      "numbers": [
+        5,
+        6,
+        19,
+        26,
+        41,
+        45
+      ],
+      "bonus": 34,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 543,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130427",
+      "numbers": [
+        13,
+        18,
+        26,
+        31,
+        34,
+        44
+      ],
+      "bonus": 12,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 9,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 544,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20130504",
+      "numbers": [
+        5,
+        17,
+        21,
+        25,
+        36,
+        44
+      ],
+      "bonus": 10,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 8,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 545,
@@ -12673,153 +12813,223 @@
     },
     {
       "round": 585,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140215",
+      "numbers": [
+        6,
+        7,
+        10,
+        16,
+        38,
+        41
+      ],
+      "bonus": 4,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 586,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140222",
+      "numbers": [
+        2,
+        7,
+        12,
+        15,
+        21,
+        34
+      ],
+      "bonus": 5,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 587,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140301",
+      "numbers": [
+        14,
+        21,
+        29,
+        31,
+        32,
+        37
+      ],
+      "bonus": 17,
+      "firstPrizeGames": 3,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 1,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 588,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140308",
+      "numbers": [
+        2,
+        8,
+        15,
+        22,
+        25,
+        41
+      ],
+      "bonus": 30,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 1,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 589,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140315",
+      "numbers": [
+        6,
+        8,
+        28,
+        33,
+        38,
+        39
+      ],
+      "bonus": 22,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 590,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140322",
+      "numbers": [
+        20,
+        30,
+        36,
+        38,
+        41,
+        45
+      ],
+      "bonus": 23,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 591,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140329",
+      "numbers": [
+        8,
+        13,
+        14,
+        30,
+        38,
+        39
+      ],
+      "bonus": 5,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 592,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140405",
+      "numbers": [
+        2,
+        5,
+        6,
+        13,
+        28,
+        44
+      ],
+      "bonus": 43,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 593,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140412",
+      "numbers": [
+        9,
+        10,
+        13,
+        24,
+        33,
+        38
+      ],
+      "bonus": 28,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 594,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20140419",
+      "numbers": [
+        2,
+        8,
+        13,
+        25,
+        28,
+        37
+      ],
+      "bonus": 3,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 9,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 595,
@@ -13923,453 +14133,663 @@
     },
     {
       "round": 645,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150411",
+      "numbers": [
+        1,
+        4,
+        16,
+        26,
+        40,
+        41
+      ],
+      "bonus": 31,
+      "firstPrizeGames": 4,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 646,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150418",
+      "numbers": [
+        2,
+        9,
+        24,
+        41,
+        43,
+        45
+      ],
+      "bonus": 30,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 647,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150425",
+      "numbers": [
+        5,
+        16,
+        21,
+        23,
+        24,
+        30
+      ],
+      "bonus": 29,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 1,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 648,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150502",
+      "numbers": [
+        13,
+        19,
+        28,
+        37,
+        38,
+        43
+      ],
+      "bonus": 4,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 2,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 649,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150509",
+      "numbers": [
+        3,
+        21,
+        22,
+        33,
+        41,
+        42
+      ],
+      "bonus": 20,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 650,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150516",
+      "numbers": [
+        3,
+        4,
+        7,
+        11,
+        31,
+        41
+      ],
+      "bonus": 35,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 651,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150523",
+      "numbers": [
+        11,
+        12,
+        16,
+        26,
+        29,
+        44
+      ],
+      "bonus": 18,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 652,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150530",
+      "numbers": [
+        3,
+        13,
+        15,
+        40,
+        41,
+        44
+      ],
+      "bonus": 20,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 1,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 653,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150606",
+      "numbers": [
+        5,
+        6,
+        26,
+        27,
+        38,
+        39
+      ],
+      "bonus": 1,
+      "firstPrizeGames": 14,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 9,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 654,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150613",
+      "numbers": [
+        16,
+        21,
+        26,
+        31,
+        36,
+        43
+      ],
+      "bonus": 6,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 655,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150620",
+      "numbers": [
+        7,
+        37,
+        38,
+        39,
+        40,
+        44
+      ],
+      "bonus": 18,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 656,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150627",
+      "numbers": [
+        3,
+        7,
+        14,
+        16,
+        31,
+        40
+      ],
+      "bonus": 39,
+      "firstPrizeGames": 2,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 657,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150704",
+      "numbers": [
+        10,
+        14,
+        19,
+        39,
+        40,
+        43
+      ],
+      "bonus": 23,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 658,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150711",
+      "numbers": [
+        8,
+        19,
+        25,
+        28,
+        32,
+        36
+      ],
+      "bonus": 37,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 659,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150718",
+      "numbers": [
+        7,
+        18,
+        19,
+        27,
+        29,
+        42
+      ],
+      "bonus": 45,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 660,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150725",
+      "numbers": [
+        4,
+        9,
+        23,
+        33,
+        39,
+        44
+      ],
+      "bonus": 14,
+      "firstPrizeGames": 10,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 2,
+        "semiAutomatic": 2
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 661,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150801",
+      "numbers": [
+        2,
+        3,
+        12,
+        20,
+        27,
+        38
+      ],
+      "bonus": 40,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 662,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150808",
+      "numbers": [
+        5,
+        6,
+        9,
+        11,
+        15,
+        37
+      ],
+      "bonus": 26,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 663,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150815",
+      "numbers": [
+        3,
+        5,
+        8,
+        19,
+        38,
+        42
+      ],
+      "bonus": 20,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 2,
+        "semiAutomatic": 2
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 664,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150822",
+      "numbers": [
+        10,
+        20,
+        33,
+        36,
+        41,
+        44
+      ],
+      "bonus": 5,
+      "firstPrizeGames": 10,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 665,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150829",
+      "numbers": [
+        5,
+        6,
+        11,
+        17,
+        38,
+        44
+      ],
+      "bonus": 13,
+      "firstPrizeGames": 4,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 666,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150905",
+      "numbers": [
+        2,
+        4,
+        6,
+        11,
+        17,
+        28
+      ],
+      "bonus": 16,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 1,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 667,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150912",
+      "numbers": [
+        15,
+        17,
+        25,
+        37,
+        42,
+        43
+      ],
+      "bonus": 13,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 668,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150919",
+      "numbers": [
+        12,
+        14,
+        15,
+        24,
+        27,
+        32
+      ],
+      "bonus": 3,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 669,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20150926",
+      "numbers": [
+        7,
+        8,
+        20,
+        29,
+        33,
+        38
+      ],
+      "bonus": 9,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 670,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20151003",
+      "numbers": [
+        11,
+        18,
+        26,
+        27,
+        40,
+        41
+      ],
+      "bonus": 25,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 671,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20151010",
+      "numbers": [
+        7,
+        9,
+        10,
+        13,
+        31,
+        35
+      ],
+      "bonus": 24,
+      "firstPrizeGames": 4,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 1,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 672,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20151017",
+      "numbers": [
+        8,
+        21,
+        28,
+        31,
+        36,
+        45
+      ],
+      "bonus": 43,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 673,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20151024",
+      "numbers": [
+        7,
+        10,
+        17,
+        29,
+        33,
+        44
+      ],
+      "bonus": 5,
+      "firstPrizeGames": 10,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 4,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 674,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20151031",
+      "numbers": [
+        9,
+        10,
+        14,
+        25,
+        27,
+        31
+      ],
+      "bonus": 11,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 675,
@@ -14593,153 +15013,223 @@
     },
     {
       "round": 685,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160116",
+      "numbers": [
+        6,
+        7,
+        12,
+        28,
+        38,
+        40
+      ],
+      "bonus": 18,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 8,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 686,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160123",
+      "numbers": [
+        7,
+        12,
+        15,
+        24,
+        25,
+        43
+      ],
+      "bonus": 13,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 687,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160130",
+      "numbers": [
+        1,
+        8,
+        10,
+        13,
+        28,
+        42
+      ],
+      "bonus": 45,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 688,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160206",
+      "numbers": [
+        5,
+        15,
+        22,
+        23,
+        34,
+        35
+      ],
+      "bonus": 2,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 689,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160213",
+      "numbers": [
+        7,
+        17,
+        19,
+        30,
+        36,
+        38
+      ],
+      "bonus": 34,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 690,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160220",
+      "numbers": [
+        24,
+        25,
+        33,
+        34,
+        38,
+        39
+      ],
+      "bonus": 43,
+      "firstPrizeGames": 15,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 12,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 691,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160227",
+      "numbers": [
+        15,
+        27,
+        33,
+        35,
+        43,
+        45
+      ],
+      "bonus": 16,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 692,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160305",
+      "numbers": [
+        3,
+        11,
+        14,
+        15,
+        32,
+        36
+      ],
+      "bonus": 44,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 4,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 693,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160312",
+      "numbers": [
+        1,
+        6,
+        11,
+        28,
+        34,
+        42
+      ],
+      "bonus": 30,
+      "firstPrizeGames": 10,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 8,
+        "manual": 1,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 694,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20160319",
+      "numbers": [
+        7,
+        15,
+        20,
+        25,
+        33,
+        43
+      ],
+      "bonus": 12,
+      "firstPrizeGames": 10,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 6,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 695,
@@ -21643,153 +22133,223 @@
     },
     {
       "round": 1015,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220514",
+      "numbers": [
+        14,
+        23,
+        31,
+        33,
+        37,
+        40
+      ],
+      "bonus": 44,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 3,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1016,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220521",
+      "numbers": [
+        15,
+        26,
+        28,
+        34,
+        41,
+        42
+      ],
+      "bonus": 44,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 10,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1017,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220528",
+      "numbers": [
+        12,
+        18,
+        22,
+        23,
+        30,
+        34
+      ],
+      "bonus": 32,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1018,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220604",
+      "numbers": [
+        3,
+        19,
+        21,
+        25,
+        37,
+        45
+      ],
+      "bonus": 35,
+      "firstPrizeGames": 2,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 2,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1019,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220611",
+      "numbers": [
+        1,
+        4,
+        13,
+        17,
+        34,
+        39
+      ],
+      "bonus": 6,
+      "firstPrizeGames": 50,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 42,
+        "semiAutomatic": 2
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1020,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220618",
+      "numbers": [
+        12,
+        27,
+        29,
+        38,
+        41,
+        45
+      ],
+      "bonus": 6,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 12,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1021,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220625",
+      "numbers": [
+        12,
+        15,
+        17,
+        24,
+        29,
+        45
+      ],
+      "bonus": 16,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 11,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1022,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220702",
+      "numbers": [
+        5,
+        6,
+        11,
+        29,
+        42,
+        45
+      ],
+      "bonus": 28,
+      "firstPrizeGames": 5,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1023,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220709",
+      "numbers": [
+        10,
+        14,
+        16,
+        18,
+        29,
+        35
+      ],
+      "bonus": 25,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 2,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1024,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20220716",
+      "numbers": [
+        9,
+        18,
+        20,
+        22,
+        38,
+        44
+      ],
+      "bonus": 10,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1025,
@@ -22013,303 +22573,443 @@
     },
     {
       "round": 1035,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221001",
+      "numbers": [
+        9,
+        14,
+        34,
+        35,
+        41,
+        42
+      ],
+      "bonus": 2,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1036,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221008",
+      "numbers": [
+        2,
+        5,
+        22,
+        32,
+        34,
+        45
+      ],
+      "bonus": 39,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1037,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221015",
+      "numbers": [
+        2,
+        14,
+        15,
+        22,
+        27,
+        33
+      ],
+      "bonus": 31,
+      "firstPrizeGames": 15,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 11,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1038,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221022",
+      "numbers": [
+        7,
+        16,
+        24,
+        27,
+        37,
+        44
+      ],
+      "bonus": 2,
+      "firstPrizeGames": 15,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 10,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1039,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221029",
+      "numbers": [
+        2,
+        3,
+        6,
+        19,
+        36,
+        39
+      ],
+      "bonus": 26,
+      "firstPrizeGames": 16,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 15,
+        "manual": 0,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1040,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221105",
+      "numbers": [
+        8,
+        16,
+        26,
+        29,
+        31,
+        36
+      ],
+      "bonus": 11,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1041,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221112",
+      "numbers": [
+        6,
+        7,
+        9,
+        11,
+        17,
+        18
+      ],
+      "bonus": 45,
+      "firstPrizeGames": 25,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 19,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1042,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221119",
+      "numbers": [
+        5,
+        14,
+        15,
+        23,
+        34,
+        43
+      ],
+      "bonus": 4,
+      "firstPrizeGames": 20,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 12,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1043,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221126",
+      "numbers": [
+        3,
+        5,
+        12,
+        22,
+        26,
+        31
+      ],
+      "bonus": 19,
+      "firstPrizeGames": 17,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 12,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1044,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221203",
+      "numbers": [
+        12,
+        17,
+        20,
+        26,
+        28,
+        36
+      ],
+      "bonus": 4,
+      "firstPrizeGames": 8,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1045,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221210",
+      "numbers": [
+        6,
+        14,
+        15,
+        19,
+        21,
+        41
+      ],
+      "bonus": 37,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 10,
+        "manual": 2,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1046,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221217",
+      "numbers": [
+        7,
+        16,
+        25,
+        29,
+        35,
+        36
+      ],
+      "bonus": 28,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 4,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1047,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221224",
+      "numbers": [
+        2,
+        20,
+        33,
+        40,
+        42,
+        44
+      ],
+      "bonus": 32,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1048,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20221231",
+      "numbers": [
+        6,
+        12,
+        17,
+        21,
+        32,
+        39
+      ],
+      "bonus": 30,
+      "firstPrizeGames": 17,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 13,
+        "manual": 4,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1049,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20230107",
+      "numbers": [
+        3,
+        5,
+        13,
+        20,
+        21,
+        37
+      ],
+      "bonus": 17,
+      "firstPrizeGames": 15,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 9,
+        "manual": 6,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1050,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20230114",
+      "numbers": [
+        6,
+        12,
+        31,
+        35,
+        38,
+        43
+      ],
+      "bonus": 17,
+      "firstPrizeGames": 17,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 14,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1051,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20230121",
+      "numbers": [
+        21,
+        26,
+        30,
+        32,
+        33,
+        35
+      ],
+      "bonus": 44,
+      "firstPrizeGames": 18,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 17,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1052,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20230128",
+      "numbers": [
+        5,
+        17,
+        26,
+        27,
+        35,
+        38
+      ],
+      "bonus": 1,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 5,
+        "manual": 5,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1053,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20230204",
+      "numbers": [
+        22,
+        26,
+        29,
+        30,
+        34,
+        45
+      ],
+      "bonus": 15,
+      "firstPrizeGames": 7,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1054,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20230211",
+      "numbers": [
+        14,
+        19,
+        27,
+        28,
+        30,
+        45
+      ],
+      "bonus": 33,
+      "firstPrizeGames": 9,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 2,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1055,
@@ -24883,153 +25583,223 @@
     },
     {
       "round": 1175,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250607",
+      "numbers": [
+        3,
+        4,
+        6,
+        8,
+        32,
+        42
+      ],
+      "bonus": 31,
+      "firstPrizeGames": 20,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 13,
+        "manual": 5,
+        "semiAutomatic": 2
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1176,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250614",
+      "numbers": [
+        7,
+        9,
+        11,
+        21,
+        30,
+        35
+      ],
+      "bonus": 29,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 7,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1177,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250621",
+      "numbers": [
+        3,
+        7,
+        15,
+        16,
+        19,
+        43
+      ],
+      "bonus": 21,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1178,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250628",
+      "numbers": [
+        5,
+        6,
+        11,
+        27,
+        43,
+        44
+      ],
+      "bonus": 17,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 8,
+        "manual": 3,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1179,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250705",
+      "numbers": [
+        3,
+        16,
+        18,
+        24,
+        40,
+        44
+      ],
+      "bonus": 21,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 6,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1180,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250712",
+      "numbers": [
+        6,
+        12,
+        18,
+        37,
+        40,
+        41
+      ],
+      "bonus": 3,
+      "firstPrizeGames": 11,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 10,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1181,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250719",
+      "numbers": [
+        8,
+        10,
+        14,
+        20,
+        33,
+        41
+      ],
+      "bonus": 28,
+      "firstPrizeGames": 17,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 10,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1182,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250726",
+      "numbers": [
+        1,
+        13,
+        21,
+        25,
+        28,
+        31
+      ],
+      "bonus": 22,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 11,
+        "manual": 0,
+        "semiAutomatic": 2
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1183,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250802",
+      "numbers": [
+        4,
+        15,
+        17,
+        23,
+        27,
+        36
+      ],
+      "bonus": 31,
+      "firstPrizeGames": 13,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 9,
+        "manual": 3,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1184,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20250809",
+      "numbers": [
+        14,
+        16,
+        23,
+        25,
+        31,
+        37
+      ],
+      "bonus": 42,
+      "firstPrizeGames": 15,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 10,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1185,
@@ -25473,153 +26243,223 @@
     },
     {
       "round": 1205,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260103",
+      "numbers": [
+        1,
+        4,
+        16,
+        23,
+        31,
+        41
+      ],
+      "bonus": 2,
+      "firstPrizeGames": 10,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 9,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1206,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260110",
+      "numbers": [
+        1,
+        3,
+        17,
+        26,
+        27,
+        42
+      ],
+      "bonus": 23,
+      "firstPrizeGames": 15,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 5,
+        "semiAutomatic": 3
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1207,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260117",
+      "numbers": [
+        10,
+        22,
+        24,
+        27,
+        38,
+        45
+      ],
+      "bonus": 11,
+      "firstPrizeGames": 17,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 12,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1208,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260124",
+      "numbers": [
+        6,
+        27,
+        30,
+        36,
+        38,
+        42
+      ],
+      "bonus": 25,
+      "firstPrizeGames": 6,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 6,
+        "manual": 0,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1209,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260131",
+      "numbers": [
+        2,
+        17,
+        20,
+        35,
+        37,
+        39
+      ],
+      "bonus": 24,
+      "firstPrizeGames": 22,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 13,
+        "manual": 7,
+        "semiAutomatic": 2
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1210,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260207",
+      "numbers": [
+        1,
+        7,
+        9,
+        17,
+        27,
+        38
+      ],
+      "bonus": 31,
+      "firstPrizeGames": 24,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 13,
+        "manual": 10,
+        "semiAutomatic": 1
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1211,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260214",
+      "numbers": [
+        23,
+        26,
+        27,
+        35,
+        38,
+        40
+      ],
+      "bonus": 10,
+      "firstPrizeGames": 14,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 13,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1212,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260221",
+      "numbers": [
+        5,
+        8,
+        25,
+        31,
+        41,
+        44
+      ],
+      "bonus": 45,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 11,
+        "manual": 1,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1213,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260228",
+      "numbers": [
+        5,
+        11,
+        25,
+        27,
+        36,
+        38
+      ],
+      "bonus": 2,
+      "firstPrizeGames": 18,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 15,
+        "manual": 3,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1214,
-      "date": null,
-      "numbers": null,
-      "bonus": null,
-      "firstPrizeGames": null,
+      "date": "20260307",
+      "numbers": [
+        10,
+        15,
+        19,
+        27,
+        30,
+        33
+      ],
+      "bonus": 14,
+      "firstPrizeGames": 12,
       "purchaseMethod": {
-        "automatic": null,
-        "manual": null,
-        "semiAutomatic": null
+        "automatic": 7,
+        "manual": 5,
+        "semiAutomatic": 0
       },
-      "methodDataStatus": "unavailable",
-      "methodDataNote": "API 응답 또는 회차 데이터 확인 실패",
-      "winType0": null
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
     },
     {
       "round": 1215,
