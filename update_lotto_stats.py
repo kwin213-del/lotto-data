@@ -17,8 +17,38 @@ API_URL = (
 
 OUTPUT_FILE = Path(__file__).with_name("method-stats.json")
 
-# 현재 확인된 최신 회차
-LATEST_ROUND = 1245
+# 당첨번호 파일에서 최신 회차 자동 확인
+LOTTO_FILE = Path(__file__).with_name("lotto.json")
+
+
+def get_latest_round():
+    if not LOTTO_FILE.exists():
+        raise FileNotFoundError(
+            f"당첨번호 파일을 찾을 수 없습니다: {LOTTO_FILE}"
+        )
+
+    data = json.loads(LOTTO_FILE.read_text(encoding="utf-8"))
+
+    if not isinstance(data, list) or not data:
+        raise ValueError("lotto.json 데이터가 비어 있거나 형식이 잘못되었습니다.")
+
+    rounds = [
+        item.get("round", item.get("draw_no"))
+        for item in data
+        if isinstance(item, dict)
+    ]
+
+    rounds = [
+        number for number in rounds
+        if isinstance(number, int)
+        and not isinstance(number, bool)
+        and number > 0
+    ]
+
+    if not rounds:
+        raise ValueError("lotto.json에서 유효한 회차를 찾지 못했습니다.")
+
+    return max(rounds)
 
 # 현재 API 응답에서 확인된 수집 범위
 FIRST_AVAILABLE_ROUND = 5
@@ -247,6 +277,9 @@ def parse_round(row):
 
 def main():
     collected = {}
+    latest_round = get_latest_round()
+
+    print(f"lotto.json 기준 최신 회차: {latest_round}")
 
     centers = list(
         range(
