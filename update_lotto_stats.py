@@ -54,7 +54,7 @@ def get_latest_round():
 FIRST_AVAILABLE_ROUND = 5
 
 # 요청 사이 대기 시간(초)
-REQUEST_DELAY = 0.5
+REQUEST_DELAY = 1.0
 
 # 요청 실패 시 재시도 횟수
 MAX_RETRIES = 3
@@ -89,7 +89,7 @@ def fetch_round_data(center_round):
 
             with urllib.request.urlopen(
                 request,
-                timeout=30,
+                timeout=60,
             ) as response:
                 body = response.read().decode("utf-8")
                 content_type = response.headers.get(
@@ -130,7 +130,7 @@ def fetch_round_data(center_round):
             last_error = error
 
             if attempt < MAX_RETRIES:
-                wait_seconds = attempt * 2
+                wait_seconds = attempt * 5
 
                 print(
                     f"재시도 {attempt}/{MAX_RETRIES - 1}: "
