@@ -284,13 +284,13 @@ def main():
     centers = list(
         range(
             10,
-            LATEST_ROUND + 1,
+            latest_round + 1,
             10,
         )
     )
 
-    if not centers or centers[-1] != LATEST_ROUND:
-        centers.append(LATEST_ROUND)
+    if not centers or centers[-1] != latest_round:
+        centers.append(latest_round)
 
     for index, center in enumerate(centers, start=1):
         print(
@@ -307,7 +307,7 @@ def main():
             if (
                 FIRST_AVAILABLE_ROUND
                 <= round_no
-                <= LATEST_ROUND
+                <= latest_round
             ):
                 collected[round_no] = item
 
@@ -318,7 +318,7 @@ def main():
     expected = set(
         range(
             FIRST_AVAILABLE_ROUND,
-            LATEST_ROUND + 1,
+            latest_round + 1,
         )
     )
 
@@ -336,7 +336,7 @@ def main():
         collected[number]
         for number in range(
             FIRST_AVAILABLE_ROUND,
-            LATEST_ROUND + 1,
+            latest_round + 1,
         )
     ]
 
@@ -397,7 +397,7 @@ def main():
         "generatedAt": datetime.now(
             timezone.utc
         ).isoformat(),
-        "latestRound": LATEST_ROUND,
+        "latestRound": latest_round,
         "firstAvailableRound": FIRST_AVAILABLE_ROUND,
         "roundCount": len(rounds),
         "methodStatistics": {
