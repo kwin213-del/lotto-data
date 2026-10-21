@@ -147,10 +147,22 @@ def fetch_round_data(center_round):
             if not isinstance(rows, list) or not rows:
                 raise ValueError("응답 데이터가 없습니다.")
 
+                        returned_rounds = sorted({
+                row.get("ltEpsd")
+                for row in rows
+                if isinstance(row, dict)
+                and isinstance(row.get("ltEpsd"), int)
+            })
+
             print(
                 f"  성공: {center_round}회차 기준, "
                 f"{len(rows)}건, {attempt}번째 시도"
             )
+            print(
+                f"  실제 반환 회차: "
+                f"{returned_rounds if returned_rounds else '회차 확인 불가'}"
+            )
+
             return rows
 
         except Exception as error:
