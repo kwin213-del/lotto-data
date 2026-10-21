@@ -21,10 +21,12 @@ LOTTO_FILE = Path(__file__).with_name("lotto.json")
 FIRST_AVAILABLE_ROUND = 5
 
 # 요청 사이 대기 시간
-REQUEST_DELAY = 0.2
+REQUEST_DELAY = 0.35
 
 # 요청당 최대 대기 시간
-REQUEST_TIMEOUT = 8
+REQUEST_TIMEOUT = 20
+REQUEST_RETRIES = 3
+RETRY_BASE_DELAY = 2
 
 # ==========================================
 # 최신 회차 확인
@@ -63,6 +65,40 @@ def get_latest_round():
 
 
 # ==========================================
+# 기존 통계 데이터 읽기 (검증된 데이터 보존)
+# ==========================================
+
+def load_existing_rounds():
+    if not OUTPUT_FILE.exists():
+        print("기존 method-stats.json 없음: 새로 수집합니다.")
+        return {}
+
+    try:
+        old_data = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
+        old_rounds = old_data.get("rounds", [])
+        result = {}
+        for item in old_rounds:
+            if isinstance(item, dict) and isinstance(item.get("round"), int):
+                result[item["round"]] = item
+        print(f"기존 통계 데이터 {len(result)}개 회차를 읽었습니다.")
+        return result
+    except Exception as error:
+        print(f"기존 통계 파일 읽기 실패: {error}")
+        return {}
+
+
+def record_quality(item):
+    status = item.get("methodDataStatus")
+    if status in ("verified", "no_first_prize_winner"):
+        return 3
+    if status == "unverified":
+        return 2
+    if status == "unavailable":
+        return 1
+    return 0
+
+
+# ==========================================
 # API 요청
 # 실패하면 None 반환 후 다음 요청 진행
 # ==========================================
@@ -74,7 +110,6 @@ def fetch_round_data(center_round):
     })
 
     url = f"{API_URL}?{params}"
-
     headers = {
         "User-Agent": "Mozilla/5.0",
         "Accept": "application/json, text/plain, */*",
@@ -82,49 +117,40 @@ def fetch_round_data(center_round):
         "Connection": "close",
     }
 
-    try:
-        request = urllib.request.Request(
-            url,
-            headers=headers,
-        )
+    for attempt in range(1, REQUEST_RETRIES + 1):
+        try:
+            request = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT) as response:
+                body = response.read().decode("utf-8")
 
-        with urllib.request.urlopen(
-            request,
-            timeout=REQUEST_TIMEOUT,
-        ) as response:
-            body = response.read().decode("utf-8")
+            result = json.loads(body)
+            if not isinstance(result, dict):
+                raise ValueError("API 응답 형식 오류")
+            if result.get("resultCode") not in (None, "0000", "200"):
+                raise ValueError(f"API 오류: {result.get('resultMessage')}")
 
-        result = json.loads(body)
+            rows = (result.get("data") or {}).get("list")
+            if not isinstance(rows, list) or not rows:
+                raise ValueError("응답 데이터가 없습니다.")
 
-        if not isinstance(result, dict):
-            raise ValueError("API 응답 형식 오류")
-
-        if result.get("resultCode") not in (
-            None, "0000", "200"
-        ):
-            raise ValueError(
-                f"API 오류: {result.get('resultMessage')}"
+            print(
+                f"  성공: {center_round}회차 기준 "
+                f"({len(rows)}건, {attempt}번째 시도)"
             )
+            return rows
 
-        rows = (result.get("data") or {}).get("list")
+        except Exception as error:
+            print(
+                f"  요청 실패: {center_round}회차 기준 "
+                f"({attempt}/{REQUEST_RETRIES}회): {error}"
+            )
+            if attempt < REQUEST_RETRIES:
+                wait_seconds = RETRY_BASE_DELAY * attempt
+                print(f"  {wait_seconds}초 후 재시도합니다.")
+                time.sleep(wait_seconds)
 
-        if not isinstance(rows, list) or not rows:
-            raise ValueError("응답 데이터가 없습니다.")
-
-        print(
-            f"  성공: {center_round}회차 기준 "
-            f"({len(rows)}건)"
-        )
-
-        return rows
-
-    except Exception as error:
-        print(
-            f"  미확인: {center_round}회차 기준 요청 실패"
-        )
-        print(f"  원인: {error}")
-        print("  재시도 없이 다음 요청으로 이동합니다.")
-        return None
+    print(f"  최종 미확인: {center_round}회차 기준 요청 실패")
+    return None
 
 
 # ==========================================
@@ -280,6 +306,7 @@ def make_unavailable_round(round_no):
 
 def main():
     collected = {}
+    existing_rounds = load_existing_rounds()
     latest_round = get_latest_round()
 
     print(f"lotto.json 기준 최신 회차: {latest_round}")
@@ -336,17 +363,23 @@ def main():
         if index < total_requests:
             time.sleep(REQUEST_DELAY)
 
-    # 누락 회차는 미확인으로 채우고 계속 진행
+    # 새 수집 결과가 없거나 품질이 낮으면 기존의 더 나은 데이터를 보존합니다.
     expected_rounds = range(
         FIRST_AVAILABLE_ROUND,
         latest_round + 1,
     )
 
     for round_no in expected_rounds:
-        if round_no not in collected:
-            collected[round_no] = make_unavailable_round(
-                round_no
-            )
+        new_item = collected.get(round_no)
+        old_item = existing_rounds.get(round_no)
+
+        if new_item is None:
+            new_item = make_unavailable_round(round_no)
+
+        if old_item is not None and record_quality(old_item) > record_quality(new_item):
+            collected[round_no] = old_item
+        else:
+            collected[round_no] = new_item
 
     rounds = [
         collected[round_no]
