@@ -15,10 +15,10 @@ OUTPUT_FILE = Path(__file__).with_name("method-stats.json")
 LOTTO_FILE = Path(__file__).with_name("lotto.json")
 
 FIRST_AVAILABLE_ROUND = 5
-REQUEST_DELAY = 0.1
-REQUEST_TIMEOUT = 5
-REQUEST_RETRIES = 2
-RETRY_BASE_DELAY = 1
+REQUEST_DELAY = 0.3
+REQUEST_TIMEOUT = 15
+REQUEST_RETRIES = 3
+RETRY_BASE_DELAY = 2
 
 
 def get_latest_round():
