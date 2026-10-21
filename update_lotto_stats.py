@@ -54,15 +54,18 @@ def get_latest_round():
 FIRST_AVAILABLE_ROUND = 5
 
 # 요청 사이 대기 시간(초)
-REQUEST_DELAY = 1.0
+REQUEST_DELAY = 1.5
 
 # 요청 실패 시 재시도 횟수
-MAX_RETRIES = 3
+MAX_RETRIES = 5
 
+# 요청당 최대 대기 시간(초)
+REQUEST_TIMEOUT = 90
 
 # ==========================================
 # API 데이터 수집
 # ==========================================
+
 
 def fetch_round_data(center_round):
     params = urllib.parse.urlencode({
@@ -76,6 +79,7 @@ def fetch_round_data(center_round):
         "User-Agent": "Mozilla/5.0",
         "Accept": "application/json, text/plain, */*",
         "Referer": "https://www.dhlottery.co.kr/lt645/result",
+        "Connection": "close",
     }
 
     last_error = None
@@ -89,7 +93,7 @@ def fetch_round_data(center_round):
 
             with urllib.request.urlopen(
                 request,
-                timeout=60,
+                timeout=REQUEST_TIMEOUT,
             ) as response:
                 body = response.read().decode("utf-8")
                 content_type = response.headers.get(
@@ -106,6 +110,9 @@ def fetch_round_data(center_round):
                 )
 
             result = json.loads(body)
+
+            if not isinstance(result, dict):
+                raise ValueError("API 응답 형식이 올바르지 않습니다.")
 
             if result.get("resultCode") not in (
                 None,
@@ -124,24 +131,36 @@ def fetch_round_data(center_round):
                     "응답에 회차 데이터가 없습니다."
                 )
 
+            print(
+                f"  {center_round}회차 기준 요청 성공 "
+                f"(응답 {len(rows)}건)"
+            )
+
             return rows
 
         except Exception as error:
             last_error = error
 
             if attempt < MAX_RETRIES:
-                wait_seconds = attempt * 5
+                # 5초 → 10초 → 20초 → 30초 대기
+                wait_seconds = min(
+                    5 * (2 ** (attempt - 1)),
+                    30,
+                )
 
                 print(
                     f"재시도 {attempt}/{MAX_RETRIES - 1}: "
-                    f"{error}"
+                    f"{center_round}회차 기준 요청 실패"
                 )
+                print(f"  원인: {error}")
+                print(f"  {wait_seconds}초 후 다시 요청합니다.")
 
                 time.sleep(wait_seconds)
 
     raise RuntimeError(
         f"{center_round}회차 기준 요청 실패: {last_error}"
     )
+
 
 
 # ==========================================
