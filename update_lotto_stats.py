@@ -370,6 +370,7 @@ def save_output(round_map, latest_round):
     )
 
 
+
 def get_request_centers(round_map, latest_round, full_scan):
     if full_scan:
         centers = list(range(10, latest_round + 1, 10))
@@ -377,13 +378,17 @@ def get_request_centers(round_map, latest_round, full_scan):
             centers.append(latest_round)
         return sorted(set(centers))
 
-    # unavailable 회차가 포함된 10회차 단위 구간만 재조회합니다.
+    # 응답 실패뿐 아니라 구매 방식 미확인 회차도 재조회합니다.
+    retry_statuses = {"unavailable", "unverified"}
     centers = set()
 
     for round_no in range(FIRST_AVAILABLE_ROUND, latest_round + 1):
         item = round_map.get(round_no)
 
-        if not item or item.get("methodDataStatus") == "unavailable":
+        if (
+            not item
+            or item.get("methodDataStatus") in retry_statuses
+        ):
             center = ((round_no + 5) // 10) * 10
 
             if center > latest_round:
@@ -392,6 +397,7 @@ def get_request_centers(round_map, latest_round, full_scan):
             centers.add(center)
 
     return sorted(centers)
+
 
 
 def main():
