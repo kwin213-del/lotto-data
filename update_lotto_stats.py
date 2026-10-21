@@ -21,12 +21,12 @@ LOTTO_FILE = Path(__file__).with_name("lotto.json")
 FIRST_AVAILABLE_ROUND = 5
 
 # 요청 사이 대기 시간
-REQUEST_DELAY = 0.35
+REQUEST_DELAY = 0.1
 
 # 요청당 최대 대기 시간
-REQUEST_TIMEOUT = 20
-REQUEST_RETRIES = 3
-RETRY_BASE_DELAY = 2
+REQUEST_TIMEOUT = 5
+REQUEST_RETRIES = 2
+RETRY_BASE_DELAY = 1
 
 # ==========================================
 # 최신 회차 확인
