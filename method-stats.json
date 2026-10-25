@@ -1,15 +1,15 @@
 {
   "source": "Donghaeng Lottery",
   "api": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do",
-  "generatedAt": "2026-10-22T01:39:31.425238+00:00",
-  "latestRound": 1246,
+  "generatedAt": "2026-10-25T01:30:31.136518+00:00",
+  "latestRound": 1247,
   "firstAvailableRound": 5,
-  "roundCount": 1242,
+  "roundCount": 1243,
   "methodStatistics": {
-    "verifiedRoundCount": 982,
+    "verifiedRoundCount": 983,
     "noFirstPrizeWinnerRoundCount": 12,
     "unverifiedRoundCount": 248,
-    "methodDataUnavailableRoundCount": 198,
+    "methodDataUnavailableRoundCount": 248,
     "methodDataUnavailableRounds": [
       6,
       10,
@@ -82,6 +82,26 @@
       82,
       83,
       84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
       105,
       106,
       107,
@@ -122,6 +142,16 @@
       142,
       143,
       144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
       155,
       156,
       157,
@@ -172,6 +202,16 @@
       202,
       203,
       204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
       215,
       216,
       217,
@@ -192,6 +232,16 @@
       232,
       233,
       234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
       245,
       246,
       247,
@@ -213,10 +263,10 @@
     "unavailableRoundCount": 0,
     "unavailableRounds": [],
     "verifiedTotals": {
-      "automatic": 6182,
-      "manual": 2882,
+      "automatic": 6187,
+      "manual": 2885,
       "semiAutomatic": 264,
-      "firstPrizeGames": 9328
+      "firstPrizeGames": 9336
     },
     "coverageNote": "구매 방식 합계는 검증 완료 회차만 집계합니다. 원본 API에서 구매 방식별 수치를 확인할 수 없는 회차는 미확인으로 유지하며, 실제 구매 방식이 0이라고 간주하지 않습니다. 응답 실패 또는 데이터 누락 회차는 집계에서 제외합니다."
   },
@@ -2000,7 +2050,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2022,7 +2072,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2044,7 +2094,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2066,7 +2116,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2088,7 +2138,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2110,7 +2160,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2132,7 +2182,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2154,7 +2204,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2176,7 +2226,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2198,7 +2248,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2220,7 +2270,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2242,7 +2292,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2264,7 +2314,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2286,7 +2336,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2308,7 +2358,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2330,7 +2380,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2352,7 +2402,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2374,7 +2424,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2396,7 +2446,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -2418,7 +2468,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3320,7 +3370,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3342,7 +3392,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3364,7 +3414,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3386,7 +3436,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3408,7 +3458,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3430,7 +3480,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3452,7 +3502,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3474,7 +3524,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3496,7 +3546,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -3518,7 +3568,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4640,7 +4690,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4662,7 +4712,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4684,7 +4734,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4706,7 +4756,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4728,7 +4778,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4750,7 +4800,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4772,7 +4822,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4794,7 +4844,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4816,7 +4866,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -4838,7 +4888,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5300,7 +5350,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5322,7 +5372,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5344,7 +5394,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5366,7 +5416,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5388,7 +5438,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5410,7 +5460,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5432,7 +5482,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5454,7 +5504,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5476,7 +5526,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -5498,7 +5548,7 @@
         "semiAutomatic": null
       },
       "methodDataStatus": "unverified",
-      "methodDataNote": "구매 방식 합계와 1등 당첨 게임 수가 불일치합니다.",
+      "methodDataNote": "원본 API에서 구매 방식별 수치가 제공되지 않음. 1등 당첨 게임 수는 양수이며 구매 방식 값은 모두 0입니다.",
       "winType0": 0
     },
     {
@@ -27540,6 +27590,28 @@
         "automatic": 11,
         "manual": 4,
         "semiAutomatic": 1
+      },
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
+    },
+    {
+      "round": 1247,
+      "date": "20261024",
+      "numbers": [
+        8,
+        14,
+        21,
+        22,
+        42,
+        45
+      ],
+      "bonus": 24,
+      "firstPrizeGames": 8,
+      "purchaseMethod": {
+        "automatic": 5,
+        "manual": 3,
+        "semiAutomatic": 0
       },
       "methodDataStatus": "verified",
       "methodDataNote": "구매 방식 합계 검증 완료",
