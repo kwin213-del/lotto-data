@@ -1,12 +1,12 @@
 {
   "source": "Donghaeng Lottery",
   "api": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do",
-  "generatedAt": "2026-11-08T01:58:41.334712+00:00",
-  "latestRound": 1249,
+  "generatedAt": "2026-11-15T02:00:13.144750+00:00",
+  "latestRound": 1250,
   "firstAvailableRound": 5,
-  "roundCount": 1245,
+  "roundCount": 1246,
   "methodStatistics": {
-    "verifiedRoundCount": 985,
+    "verifiedRoundCount": 986,
     "noFirstPrizeWinnerRoundCount": 12,
     "unverifiedRoundCount": 248,
     "methodDataUnavailableRoundCount": 248,
@@ -263,10 +263,10 @@
     "unavailableRoundCount": 0,
     "unavailableRounds": [],
     "verifiedTotals": {
-      "automatic": 6207,
+      "automatic": 6216,
       "manual": 2894,
       "semiAutomatic": 264,
-      "firstPrizeGames": 9365
+      "firstPrizeGames": 9374
     },
     "coverageNote": "구매 방식 합계는 검증 완료 회차만 집계합니다. 원본 API에서 구매 방식별 수치를 확인할 수 없는 회차는 미확인으로 유지하며, 실제 구매 방식이 0이라고 간주하지 않습니다. 응답 실패 또는 데이터 누락 회차는 집계에서 제외합니다."
   },
@@ -27655,6 +27655,28 @@
       "purchaseMethod": {
         "automatic": 7,
         "manual": 7,
+        "semiAutomatic": 0
+      },
+      "methodDataStatus": "verified",
+      "methodDataNote": "구매 방식 합계 검증 완료",
+      "winType0": 0
+    },
+    {
+      "round": 1250,
+      "date": "20261114",
+      "numbers": [
+        1,
+        5,
+        18,
+        23,
+        27,
+        28
+      ],
+      "bonus": 8,
+      "firstPrizeGames": 9,
+      "purchaseMethod": {
+        "automatic": 9,
+        "manual": 0,
         "semiAutomatic": 0
       },
       "methodDataStatus": "verified",
